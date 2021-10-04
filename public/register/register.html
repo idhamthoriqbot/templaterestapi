@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport" />
+      <title>Register - Api Fahmi</title>
+      
+      <!-- General CSS Files -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/css/app.min.css" />
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/bundles/selectric.css" />
+      
+      <!-- Template CSS -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/css/style.css" />
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/css/components.css" />
+      
+      <!-- Custom style CSS -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/css/custom.css">
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/bundles/sweetalert.min.js"></script>
+      <link rel="shortcut icon" type="image/x-icon" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/img/favicon.ico" />
+  
+         <script type="text/javascript">
+         		$(document).ready(function(){
+
+         			$( "#form1" ).submit(function(event) {
+         				event.preventDefault();
+
+         				$.ajax({
+         					type: 'POST',
+         					url: '/register',
+         					data: $('#form1').serialize(),
+         					dataType: "json",
+         					success: function(response){
+         						$('#form1')[0].reset();
+         						document.getElementById("check").innerHTML=response.Success;
+                  					setTimeout(function(){
+                  						document.getElementById("check").innerHTML="";
+                  					},3000);
+                  					if (response.Success=="You are regestered,You can login now.") {
+                  						document.getElementById("aa").click();
+                  					};
+                  				},
+                  				error: function() {
+                  				}
+                  			})
+         			});
+         		});
+      </script>
+      
+      <script type="text/javascript">
+      var onloadCallback = function() {
+        grecaptcha.render('fahmirecapt', {
+          'sitekey' : '6LfzeJ4aAAAAADeaiJ5IYagUofEvgh0rWg9fyko5',
+          'theme' : 'light'
+        });
+      };
+    </script>
+    
+   </head>
+   <body>
+      <div class="loader"></div>
+      <div id="app">
+         <section class="section">
+            <div class="container mt-5">
+               <div class="row">
+                  <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+                     <div class="card card-primary">
+                        <div class="card-header">
+                           <h4>Register</h4>
+                        </div>
+                        <div class="card-body">
+                           <form id="form1" method="post">
+                              <div class="row">
+                                 <div class="form-group col-6">
+                                    <label for="namef">Your name</label>
+                                 <input id="namef" type="text" class="form-control" name="nama" />
+                                 </div>
+                                 <div class="form-group col-6">
+                                    <label for="usernmf" class="d-block">Username</label>
+                                    <input id="usernmf" type="text" class="form-control" name="username" />
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <label for="email">Email</label>
+                                 <input id="email" type="email" class="form-control" name="email" />
+                                 <div class="invalid-feedback"></div>
+                              </div>
+                              <div class="row">
+                                 <div class="form-group col-6">
+                                    <label for="password" class="d-block">Password</label>
+                                    <input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password" />
+                                    <div id="pwindicator" class="pwindicator">
+                                       <div class="bar"></div>
+                                       <div class="label"></div>
+                                    </div>
+                                 </div>
+                                 <div class="form-group col-6">
+                                    <label for="password2" class="d-block">Confirm Password</label>
+                                    <input id="password2" type="password" class="form-control" name="passwordConf" />
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <div id="fahmirecapt"></div>
+                              </div>
+                              <div class="form-group">
+                                 <button type="submit" value="Register" class="btn btn-primary btn-lg btn-block">
+                                    Register
+                                 </button>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="mb-4 text-muted text-center">Already registered? <a href="/login">Login Now</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+
+
+
+      <!-- General JS Scripts -->
+      <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/js/app.min.js"></script>
+      <!-- JS Libraies -->
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/bundles/jquery.pwstrength.min.js"></script>
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/bundles/jquery.selectric.min.js"></script>
+      <!-- Template JS File -->
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/js/scripts.js"></script>
+      <!-- Custom JS File -->
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/js/custom.js"></script>
+
+   </body>
+</html>
