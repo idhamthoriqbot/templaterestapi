@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport" />
+      <title>Api DZX</title>
+      <script async='async' data-ad-client='ca-pub-9147144556578830' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+
+      <!-- General CSS Files -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/css/app.min.css" />
+      
+      <!-- Template CSS -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/css/style.css" />
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/css/components.css" />
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/bundles/iziToast.min.css">
+      <!-- CLOCK -->
+      
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/idhamthoriqbot/css@test/clock.css">
+  
+      <!-- CLOCK -->
+
+      
+      <!-- Custom style CSS -->
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/css/custom.css" />
+      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/bundles/iziToast.min.js"></script>
+      
+      <!-- Meta bot -->
+      <meta content='DZXBOT' property='og:title'/>
+      <meta content='https://i.ibb.co/F4svKGd/thumbnail.png' property='og:image'/>
+      <meta content='Bot WhatsApp Nodejs Serbaguna by Fahmi Hdytllah!' property='og:description'/>
+
+   </head>
+   <body>
+      <div class="loader"></div>
+      <div id="app">
+         <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+            
+            <nav class="navbar navbar-expand-lg main-navbar sticky">
+               <div class="form-inline mr-auto">
+                  <ul class="navbar-nav mr-3">
+                     <li>
+                        <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"> <i data-feather="align-justify"></i></a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                           <i data-feather="maximize"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <form class="form-inline mr-auto">
+                           <div class="search-element">
+                              <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200" />
+                              <button class="btn" type="submit">
+                                 <i class="fas fa-search"></i>
+                              </button>
+                           </div>
+                        </form>
+                     </li>
+                  </ul>
+               </div>
+               <ul class="navbar-nav navbar-right">
+                  <li class="dropdown dropdown-list-toggle">
+                     <a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i> <span class="badge headerBadge1"> 4 </span> </a>
+                     <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                        <div class="dropdown-header">
+                           Messages
+                           <div class="float-right">
+                              <a href="#">Mark All As Read</a>
+                           </div>
+                        </div>
+                        <div class="dropdown-list-content dropdown-list-message">
+                        	<a href="#" class="dropdown-item">
+                              <span class="dropdown-item-avatar text-white"> <img alt="image" src="img/user.jpeg" class="rounded-circle" /> </span>
+                              <span class="dropdown-item-desc">
+                                 <span class="message-user">Administrator</span>
+                                 <span class="time messege-text">Don't shoot, bro, you'll die :(</span>
+                                 <span class="time">Now</span>
+                              </span>
+                           </a>
+                           <a href="#" class="dropdown-item">
+                              <span class="dropdown-item-avatar text-white"> <img alt="image" src="img/user.jpeg" class="rounded-circle" /> </span>
+                              <span class="dropdown-item-desc">
+                                 <span class="message-user">Damzz</span>
+                                 <span class="time messege-text">Semoga Kalian senang mengunakan api ini.</span>
+                                 <span class="time">Now</span>
+                              </span>
+                           </a>
+                           <a href="#" class="dropdown-item">
+                              <span class="dropdown-item-avatar text-white"> <img alt="image" src="img/user.jpeg" class="rounded-circle" /> </span>
+                              <span class="dropdown-item-desc">
+                                 <span class="message-user">Administrator</span>
+                                 <span class="time messege-text">Don't Forget to Subscribe to Youtube Channels: Idham Thoriq Channel</span>
+                                 <span class="time">2 Min Ago</span>
+                              </span>
+                           </a>
+                           <a href="#" class="dropdown-item">
+                              <span class="dropdown-item-avatar text-white">
+                                 <img alt="image" src="img/user.jpeg" class="rounded-circle" />
+                              </span>
+                              <span class="dropdown-item-desc">
+                                 <span class="message-user">Administrator</span> <span class="time messege-text">Do not forget to take a bath..</span>
+                                 <span class="time">5 Min Ago</span>
+                              </span>
+                           </a>
+                        </div>
+                        <div class="dropdown-footer text-center">
+                           <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="dropdown dropdown-list-toggle">
+                     <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i> </a>
+                     <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                        <div class="dropdown-header">
+                           Notifications
+                           <div class="float-right">
+                              <a href="#">Mark All As Read</a>
+                           </div>
+                        </div>
+                        <div class="dropdown-list-content dropdown-list-icons">
+                        	<a href="#" class="dropdown-item dropdown-item-unread">
+                              <span class="dropdown-item-icon bg-success text-white"> <i class="fas fa-check"></i></span> <span class="dropdown-item-desc"> Fix Bugs and Fix Error!<span class="time">Now</span> </span>
+                           </a>
+                        	<a href="#" class="dropdown-item dropdown-item-unread">
+                              <span class="dropdown-item-icon bg-info text-white"> <i class="fas fa-bell"></i></span> <span class="dropdown-item-desc"> Welcome to DZX Api!<span class="time">Now</span> </span>
+                           </a>
+                           <a href="#" class="dropdown-item dropdown-item-unread">
+                              <span class="dropdown-item-icon bg-primary text-white"> <i class="fas fa-code"></i> </span> <span class="dropdown-item-desc"> Template update is available now! <span class="time">2 Min Ago</span> </span>
+                           </a>
+                        </div>
+                        <div class="dropdown-footer text-center">
+                           <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                        <img alt="image" src="img/user.jpeg" class="user-img-radious-style" /> <span class="d-sm-none d-lg-inline-block"></span>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-right pullDown">
+                        <div class="dropdown-title">Welcome Guest</div>
+
+
+
+<a href="./register" class="dropdown-item has-icon"> <i class="fas fa-user-plus"></i> Register </a>
+<a href="./login" class="dropdown-item has-icon"><i class="fas fa-sign-in-alt"></i> Login</a>
+<a href="./forgetpass" class="dropdown-item has-icon"><i class="fas fa-key"></i> Lupa Sandi</a>
+<a href="./resendconfirmation" class="dropdown-item has-icon"><i class="fas fa-paper-plane"></i> Resend Confirmation</a>
+           
+                     </div>
+                  </li>
+               </ul>
+            </nav>
+            <div class="main-sidebar sidebar-style-2">
+               <aside id="sidebar-wrapper">
+                  <div class="sidebar-brand">
+                     <a href="/"> <img alt="image" src="img/logo/logo.png" class="header-logo" /> <span class="logo-name">DZX Api</span> </a>
+                  </div>
+                  <div class="sidebar-user">
+                     <div class="sidebar-user-picture">
+                        <img alt="image" src="img/user.jpeg" />
+                     </div>
+                     <div class="sidebar-user-details">
+                        <div class="user-name">Guest</div>
+                        <div class="user-role">Welcome</div>
+                     </div>
+                  </div>
+                  <ul class="sidebar-menu">
+                     <li class="menu-header">Main</li>
+                     <li><a href="/404" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a></li>
+                     <li><a href="/404" class="nav-link"><i data-feather="trending-up"></i><span>Upgrade User</span></a></li>
+                     <li><a href="/404" class="nav-link"><i data-feather="shopping-cart"></i><span>Buy Limit</span></a></li>
+                     <li><a href="/404" class="nav-link"><i data-feather="refresh-cw"></i><span>Changelog</span></a></li>
+                     <li class="menu-header">Menu</li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="download"></i><span>Downloader</span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="nav-link" href="/api/fbdown/?url=url&apikey=apikey" target="_blank">Facebook</a></li>
+                           <li><a class="nav-link" href="/api/tiktod/?url=url&apikey=apikey" target="_blank">Tiktok</a></li>
+                           <li><a class="nav-link" href="/api/tiktod/stalk/?username=url&apikey=apikey" target="_blank">Tiktok stalk</a></li>
+                        </ul>
+                     </li>
+
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="type"></i><span>Islam</span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="nav-link" href="api/hadits?kitab=bukhari&nomor=52&apikey=MASUKAN_APIKEY" target="_blank">Hadits</a></li>
+                           <li><a class="nav-link" href="api/quran?surah=1&ayat=2&apikey=MASUKAN_APIKEY" target="_blank">Al Qur'an</a></li>
+                           <li><a class="nav-link" href="api/muslim/tahlil?apikey=MASUKAN_APIKEY" target="_blank">Doa Tahlil</a></li>
+                           <li><a class="nav-link" href="api/muslim/wirid?apikey=MASUKAN_APIKEY" target="_blank">Doa Wirid</a></li>
+                           <li><a class="nav-link" href="api/muslim/asmaulhusna?apikey=MASUKAN_APIKEY" target="_blank">Asmaul Husna</a></li>
+                           <li><a class="nav-link" href="api/muslim/doaharian?apikey=MASUKAN_APIKEY" target="_blank">Doa Harian</a></li>
+                           <li><a class="nav-link" href="api/muslim/ayatkursi?apikey=MASUKAN_APIKEY" target="_blank">Ayat Kursi</a></li>
+                           <li><a class="nav-link" href="api/kisahnabi?nabi=muhammad&apikey=MASUKAN_APIKEY" target="_blank">Kisah Nabi</a></li>
+                           <li><a class="nav-link" href="api/muslim/niatshalat?apikey=MASUKAN_APIKEY" target="_blank">Niat Shalat</a></li>
+                           <li><a class="nav-link" href="api/muslim/bacaanshalat?apikey=MASUKAN_APIKEY" target="_blank">Bacaan Sholat</a></li>
+                           <li><a class="nav-link" href="api/jadwalshalat?kota=jakartautara&apikey=MASUKAN_APIKEY" target="_blank">Jadwal Sholat</a></li>
+                        </ul>
+                     </li>
+
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span>Images</span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="nav-link" href="api/wallpaper/teknologi?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper Teknologi</a></li>
+                           <li><a class="nav-link" href="api/wallpaper/programming?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper Programming</a></li>
+                           <li><a class="nav-link" href="api/wallpaper/cyberspace?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper CyberSpace</a></li>
+                           <li><a class="nav-link" href="api/wallpaper/muslim?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper Muslim</a></li>
+                           <li><a class="nav-link" href="api/wallpaper/pegunungan?apikey=MASUKAN_APIKEY" target="_blank">Wallpaper Pegunungan</a></li>
+                           </ul>
+                     </li>
+
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="sliders"></i><span>Random</span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="nav-link" href="api/randomquote?apikey=MASUKIN_APIKEY" target="_blank">Quotes</a></li>
+                           <li><a class="nav-link" href="api/randomquote/muslim?apikey=MASUKIN_APIKEY" target="_blank">Qoutes Islamic</a></li>
+                           <li><a class="nav-link" href="api/quotes/kanye?apikey=MASUKIN_APIKEY" target="_blank">Quotes Kanye</a></li>
+                           <li><a class="nav-link" href="api/random/asmaulhusna?apikey=MASUKIN_APIKEY" target="_blank">asmaulhusna</a></li>
+                           <li><a class="nav-link" href="api/random/meme?apikey=MASUKIN_APIKEY" target="_blank">Meme</a></li>
+                           </ul>
+                     </li>
+
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="image"></i><span>Photooxy</span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="nav-link" href="api/textmaker?text=halo&text2=hai&theme=glitch&apikey=MASUKIN_APIKEY" target="_blank">Glitch Text</a></li>
+                           <li><a class="nav-link" href="api/textmaker?text=halo&text2=hai&text3=gwganteng&theme=google-suggestion&apikey=MASUKIN_APIKEY" target="_blank">Google Suggestion</a></li>
+                           <li><a class="nav-link" href="api/textmaker/game?text=halo&text2=hai&theme=pubg&apikey=MASUKIN_APIKEY" target="_blank">PUBG</a></li>
+                           <li><a class="nav-link" href="api/textmaker/game?text=halo&text2=hai&theme=battlefield&apikey=MASUKIN_APIKEY" target="_blank">Battlefield</a></li>
+                           <li><a class="nav-link" href="api/textmaker/senja?text=damzz&theme=coffee-cup&apikey=MASUKIN_APIKEY" target="_blank">Coffe Cup 1</a></li>
+                           <li><a class="nav-link" href="api/textmaker/senja?text=dozz&theme=coffee-cup2&apikey=MASUKIN_APIKEY" target="_blank">Coffe Cup 2</a></li>
+                           <li><a class="nav-link" href="api/textmaker/metallic?text=Test&theme=neon&apikey=MASUKIN_APIKEY" target="_blank">Neon</a></li>
+                           <li><a class="nav-link" href="api/textmaker/metallic?text=DZX&theme=glow&apikey=MASUKIN_APIKEY" target="_blank">Glow</a></li>
+                           <li><a class="nav-link" href="api/textmaker/alam?text=Damzz&theme=summer&apikey=MASUKIN_APIKEY" target="_blank">Summer</a></li>
+                           <li><a class="nav-link" href="api/textmaker/alam?text=Dozz&theme=flower&apikey=MASUKIN_APIKEY" target="_blank">Flower</a></li>
+                           </ul>
+                     </li>
+
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="image"></i><span>Wibu Api's :v</span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="nav-link" href="api/anime/kusonime?search=planetarian&apikey=MASUKAN_APIKEY" target="_blank">Kusonime</a></li>
+                           <li><a class="nav-link" href="api/manga?search=kimetsu no yaiba&apikey=MASUKAN_APIKEY" target="_blank">Manga</a></li>
+                           </ul>
+                     </li>
+
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="droplet"></i><span>Games</span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="nav-link" href="/api/kuis/caklontong?apikey=MASUKAN_APIKEY" target="_blank">CakLontong</a></li>
+                           <li><a class="nav-link" href="/api/kuis/tebakgambar?apikey=MASUKAN_APIKEY" target="_blank">Tebak Gambar</a></li>
+                           </ul>
+                     </li>
+
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span>Others</span></a>
+                        <ul class="dropdown-menu">
+                           <li><a class="nav-link" href="api/cuaca?kabupaten=kab bungo&apikey=MASUKAN_APIKEY" target="_blank">Cuaca</a></li>
+                           <li><a class="nav-link" href="api/short/tiny?url=google.com&apikey=MASUKAN_APIKEY" target="_blank">Short Link</a></li>
+                           <li><a class="nav-link" href="api/wikipedia?search=jembatan&apikey=MASUKAN_APIKEY" target="_blank">Wiki Pedia</a></li>
+                           <li><a class="nav-link" href="api/drakorasia?search=tale&apikey=MASUKAN_APIKEY" target="_blank">Drakor</a></li>
+                           <li><a class="nav-link" href="api/fakedata?country=en&apikey=MASUKAN_APIKEY" target="_blank">Fake Data</a></li>
+                           <li><a class="nav-link" href="api/liriklagu?lagu=sayang&apikey=MASUKAN_APIKEY" target="_blank">Lirik Lagu</a></li>
+                           <li><a class="nav-link" href="api/chordlagu?lagu=sayang&apikey=MASUKAN_APIKEY" target="_blank">Chord Lagu</a></li>
+                           <li><a class="nav-link" href="api/kbbi?kata=pohon&apikey=MASUKAN_APIKEY" target="_blank">KBBI</a></li>
+                           <li><a class="nav-link" href="api/kodepos?kota=jakarta&apikey=MASUKAN_APIKEY" target="_blank">Kode Pos</a></li>
+                           <li><a class="nav-link" href="api/translate?kata=hi&apikey=MASUKAN_APIKEY" target="_blank">Translate</a></li>
+                           </ul>
+                     </li>
+
+                     
+
+                     <li class="menu-header">My Project</li>
+                     <li><a href="https://www.dhamzxploit.my.id" class="nav-link"><i data-feather="globe"></i><span>Website</span></a></li>
+                     <li><a href="https://saweria.co/idhamthoriq" class="nav-link"><i data-feather="heart"></i><span>Donasi</span></a></li>
+                     <li><a href="https://wa.me/13479805233" class="nav-link"><i data-feather="star"></i><span>Bot Whatsapp</span></a></li>
+
+                     <li class="menu-header">About</li>
+                     <li><a href="https://youtube.com/channel/UCvG0qWJG6lL1jqtJ1WSG94g" class="nav-link"><i data-feather="youtube"></i><span>Youtube</span></a></li>
+                     <li><a href="https://www.instagram.com/dhamz._" class="nav-link"><i data-feather="instagram"></i><span>Instagram</span></a></li>
+                     <li><a href="https://github.com/idhamthoriqbot" class="nav-link"><i data-feather="github"></i><span>Github</span></a>
+                     </li>
+                  </ul>
+               </aside>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+               <section class="section">
+                  <div class="row">
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                           <div class="card-statistic-4">
+                              <div class="info-box7-block">
+                                 <h6 class="m-b-20 text-right">Total All Hit</h6>
+                                 <h4 class="text-right"><i class="fas fa-chart-line pull-left bg-indigo c-icon"></i><span>985x</span></h4>
+                                 <p class="mb-0 mt-3 text-muted"><i class="fas fa-arrow-circle-up col-green m-r-5"></i><span class="text-success font-weight-bold">30%</span> then previous month</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                           <div class="card-statistic-4">
+                              <div class="info-box7-block">
+                                 <h6 class="m-b-20 text-right">Total User</h6>
+                                 <h4 class="text-right"><i class="far fa-user pull-left bg-cyan c-icon"></i><span>11 Users</span></h4>
+                                 <p class="mb-0 mt-3 text-muted"><i class="fas fa-arrow-circle-up col-red m-r-5"></i><span class="col-red font-weight-bold">5%</span> then previous month</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                           <div class="card-statistic-4">
+                              <div class="info-box7-block">
+                                 <h6 class="m-b-20 text-right">Total Hit Today</h6>
+                                 <h4 class="text-right"><i class="fas fa-burn pull-left bg-orange c-icon"></i><span>5x</span></h4>
+                                 <p class="mb-0 mt-3 text-muted"><i class="fas fa-arrow-circle-up col-green m-r-5"></i><span class="text-success font-weight-bold">10%</span> then previous month</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                           <div class="card-statistic-4">
+                              <div class="info-box7-block">
+                              <h6 class="m-b-20 text-left">Hello Guest</h6>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div> 
+  
+<div class="row">
+   <div class="col-12 col-sm-12 col-lg-12">
+      <div class="card card-info">
+         <div class="card-header">
+            <h4>CLOCK</h4>
+            <div class="card-header-action">
+               <a data-collapse="#mycard-collapse1" class="btn btn-icon btn-info" href="#"><i class="fas fa-minus"></i></a>
+            </div>
+         </div>
+         <div class="collapse show" id="mycard-collapse1">
+            <div class="card-body">
+               <div class="card-body card-type-3">
+                  <div class="row">
+                     <!--<div class="col">
+                        <h6 class="text-muted mb-0">lead limit</h6>
+                        <span class="font-weight-bold mb-0">login first</span>
+                     </div>
+                     <div class="col-auto">
+                        <div class="card-circle l-bg-orange text-white">
+                           <i class="fas fa-book-open"></i>
+                        </div>
+                     </div> -->
+                     <div class="wrapper">
+         <div class="display">
+            <div id="time"></div>
+         </div>
+         <span></span>
+         <span></span>
+      </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm"> <b></b>  <b></b>.</p>
+               </div>
+               <div class="card-body card-type-3">
+                  <div class="row">
+                     <div class="col">
+                        <h6 class="text-muted mb-0"></h6>
+                        <span class="font-weight-bold mb-0"> </span>
+                     </div>
+                     <div class="col-auto">
+                        <div class="card-circle l-bg-purple text-white">
+                           <i class="fas fa-clock"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-muted text-sm"></p>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="row">
+   <div class="col-12 col-sm-12 col-lg-6">
+      <div class="card card-warning">
+         <div class="card-header">
+            <h4>System information</h4>
+            <div class="card-header-action">
+               <a data-collapse="#mycard-collapse2" class="btn btn-icon btn-warning" href="#"><i class="fas fa-minus"></i></a>
+            </div>
+         </div>
+         <div class="collapse show" id="mycard-collapse2">
+            <div class="card-body">
+               <ol>
+                  <li>Each new user has a balance of Rp. 1000, serves to buy limit.</li>
+                  <li>Each user has 50x limit hits per day which will be reset every hour <b>00.00</b>.</li>
+                  <li>How to get balance? by inviting to register for this website.</li>
+                  <li>Every time you request you will also get a balance of <b>Rp. 50</b>.</li>
+                  <li>To buy the limit, you can go through the menu list.</li>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="col-12 col-sm-12 col-lg-6">
+      <div class="card card-warning">
+         <div class="card-header">
+            <h4>Terms and conditions</h4>
+            <div class="card-header-action">
+               <a data-collapse="#mycard-collapse3" class="btn btn-icon btn-warning" href="#"><i class="fas fa-minus"></i></a>
+            </div>
+         </div>
+         <div class="collapse show" id="mycard-collapse3">
+            <div class="card-body">
+               <ol>
+                  <li>Don't make many requests in a few seconds it will make your apikey error.</li>
+                  <li>Create multiple accounts with the same <b>IP</b> then the <b>IP</b> will be automatically blocked.</li>
+                  <li>Admin can change the terms on this website at any time, in order to maintain website quality.</li>
+                  <li>Report immediately if there is a menu that is not working properly!</li>
+                  <li>Admin is not responsible for what you do in using this website.</li>
+                  <li>If you want to request a menu or donate, you can contact us directly.</li>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+                 
+<div class="row">
+   <div class="col-12">
+      <div class="card card-info">
+         <div class="card-header">
+            <h4>There is nothing here</h4>
+            <div class="card-header-action">
+               <a data-collapse="#mycard-collapse4" class="btn btn-icon btn-info" href="#"><i class="fas fa-minus"></i></a>
+            </div>
+         </div>
+         <div class="collapse show" id="mycard-collapse4">
+            <div class="card-body">
+               <div class="table-responsive">
+                 <!-- <table class="table table-striped">
+                     <thead>
+                        <tr>
+                           <th>Pics</th>
+                           <th>Name & Hit</th>
+                           <th>Total Hit</th>
+                           <th>Subcription</th>
+                        </tr>
+                     </thead>
+
+                     
+                     <tr>
+                        <td class="table-img"><img src="https://i.ibb.co/Kz2V1tB/1.jpg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">Administrator</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 5x</span></p>
+                        </td>
+                        <td>655x</td>
+                        <td>
+                           <div class="badge-outline col-green">Premium</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">Supra</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>151x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">tonho</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>115x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">Huhue</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>21x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">dans</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>14x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">reizin</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>9x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">Fillioe</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>7x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">Matheus</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>4x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">Yuda</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>2x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="table-img"><img src="assets/img/user.jpeg" alt="" /></td>
+                        <td>
+                           <h6 class="mb-0 font-13">AdiGans</h6>
+                           <p class="m-0 font-12">Hit Today<span class="col-green font-weight-bold"> 0x</span></p>
+                        </td>
+                        <td>1x</td>
+                        <td>
+                           <div class="badge-outline col-green">Free</div>
+                        </td>
+                     </tr>
+                     
+                  </table> -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<ins class="adsbygoogle card"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-9147144556578830"
+     data-ad-slot="4338789357"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+               </section>
+               <div class="settingSidebar">
+                  <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i> </a>
+                  <div class="settingSidebar-body ps-container ps-theme-default">
+                     <div class="fade show active">
+                        <div class="setting-panel-header">Setting Panel</div>
+                        <div class="p-15 border-bottom">
+                           <h6 class="font-medium m-b-10">Select Layout</h6>
+                           <div class="selectgroup layout-color w-50">
+                              <label class="selectgroup-item">
+                                 <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked />
+                                 <span class="selectgroup-button">Light</span>
+                              </label>
+                              <label class="selectgroup-item">
+                                 <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout" />
+                                 <span class="selectgroup-button">Dark</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="p-15 border-bottom">
+                           <h6 class="font-medium m-b-10">Sidebar Color</h6>
+                           <div class="selectgroup selectgroup-pills sidebar-color">
+                              <label class="selectgroup-item">
+                                 <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar" />
+                                 <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip" data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
+                              </label>
+                              <label class="selectgroup-item">
+                                 <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked />
+                                 <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip" data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="p-15 border-bottom">
+                           <h6 class="font-medium m-b-10">Color Theme</h6>
+                           <div class="theme-setting-options">
+                              <ul class="choose-theme list-unstyled mb-0">
+                                 <li title="white" class="active">
+                                    <div class="white"></div>
+                                 </li>
+                                 <li title="cyan">
+                                    <div class="cyan"></div>
+                                 </li>
+                                 <li title="black">
+                                    <div class="black"></div>
+                                 </li>
+                                 <li title="purple">
+                                    <div class="purple"></div>
+                                 </li>
+                                 <li title="orange">
+                                    <div class="orange"></div>
+                                 </li>
+                                 <li title="green">
+                                    <div class="green"></div>
+                                 </li>
+                                 <li title="red">
+                                    <div class="red"></div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="p-15 border-bottom">
+                           <div class="theme-setting-options">
+                              <label class="m-b-0">
+                                 <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" id="mini_sidebar_setting" />
+                                 <span class="custom-switch-indicator"></span>
+                                 <span class="control-label p-l-10">Mini Sidebar</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="p-15 border-bottom">
+                           <div class="theme-setting-options">
+                              <label class="m-b-0">
+                                 <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" id="sticky_header_setting" />
+                                 <span class="custom-switch-indicator"></span>
+                                 <span class="control-label p-l-10">Sticky Header</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                           <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme"> <i class="fas fa-undo"></i> Restore Default </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <footer class="main-footer">
+               <div class="footer-left">
+                  Copyright &copy; 2021
+                  <div class="bullet"></div>
+                  Design By <a href="https://api.dhamzxploit.my.id">Damzz</a>
+               </div>
+               <div class="footer-right"></div>
+            </footer>
+         </div>
+      </div>
+
+      <script>iziToast.success({ title: `Halo Guest !!!`, message: 'Welcome to the Api DZX website, please enjoy the features.', position: 'topRight' });</script>
+
+      <!-- General JS Scripts -->
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/js/app.min.js"></script>
+      <!-- JS Libraies -->
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/js/famin.js"></script>
+      <!-- Template JS File -->
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/js/scripts.js"></script>
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/js/fahmi.js"></script>
+      <!-- Custom JS File -->
+      <script src="//cdn.jsdelivr.net/gh/fahmicog/vendor@main/js/custom.js"></script>
+
+      <script src="//cdn.jsdelivr.net/gh/idhamthoriqbot/css@main/clock.js">
+      </script>
+      
+  </body>
+</html>
